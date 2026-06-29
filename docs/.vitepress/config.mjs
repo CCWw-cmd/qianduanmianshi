@@ -40,29 +40,29 @@ export default defineConfig({
         text: "基础进阶",
         activeMatch: "/basic/",
         items: [
-          { text: "基础篇", link: "basic/base" },
-          { text: "进阶篇", link: "basic/improve" },
-          { text: "高频篇", link: "basic/high-frequency" },
-          { text: "手写篇", link: "basic/handlewritten" },
-          { text: "综合题型", link: "basic/comprehensive" },
-          { text: "其它问题", link: "basic/other-questions" },
+          { text: "基础篇", link: "/basic/base" },
+          { text: "进阶篇", link: "/basic/improve" },
+          { text: "高频篇", link: "/basic/high-frequency" },
+          { text: "手写篇", link: "/basic/handlewritten" },
+          { text: "综合题型", link: "/basic/comprehensive" },
+          { text: "其它问题", link: "/basic/other-questions" },
         ],
       },
       {
         text: "原理篇",
         activeMatch: "/principle/",
         items: [
-          { text: "Vue.js设计与实现", link: "principle/Vue.js设计与实现/第1章权衡的艺术.md" },
-          { text: "Vue", link: "principle/vue/01-从源码解读Vue生命周期" },
-          { text: "React", link: "principle/react/01-React router原理" },
-          { text: "Node", link: "principle/node/01-Node事件循环机制原理" },
-          { text: "Javascript", link: "principle/javascript/01-JavaScript引擎如何执行JavaScript代码" },
-          { text: "Webpack", link: "principle/webpack/01-手写webpack打包核心原理 彻底讲明白Webpack设计理念" },
+          { text: "Vue.js设计与实现", link: "/principle/Vue.js设计与实现/第1章权衡的艺术" },
+          { text: "Vue", link: "/principle/vue/01-从源码解读Vue生命周期" },
+          { text: "React", link: "/principle/react/01-React router原理" },
+          { text: "Node", link: "/principle/node/01-Node事件循环机制原理" },
+          { text: "Javascript", link: "/principle/javascript/01-JavaScript引擎如何执行JavaScript代码" },
+          { text: "Webpack", link: "/principle/webpack/01-手写webpack打包核心原理 彻底讲明白Webpack设计理念" },
         ],
       },
       {
         text: "精选篇",
-        link: "/excellent/01-HTML.md",
+        link: "/excellent/01-HTML",
         activeMatch: "/excellent/",
       },
       {
@@ -73,7 +73,7 @@ export default defineConfig({
       {
         text: "自检篇",
         activeMatch: "/qa/",
-        link: "qa/1-前端100题自检",
+        link: "/qa/1-前端100题自检",
       },
       {
         text: "每日一题",
@@ -232,7 +232,7 @@ function getItems(name) {
     .map((filename) => {
       return {
         text: filename.replace(/\.md$/, ""),
-        link: `/${name}/${filename}`,
+        link: `/${name}/${filename.replace(/\.md$/, "")}`,
       };
     })
 }
