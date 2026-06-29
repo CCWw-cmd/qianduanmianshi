@@ -2,7 +2,7 @@
 
 > 前端基础题型，快速过一遍即可
 
-![面试经验谈](https://s.poetries.top/uploads/2022/07/ee7310c4f45b9bd6.png)
+![面试经验谈](./images/interview-experience.png)
 
 ## 一、HTML、HTTP、WEB综合问题
 
