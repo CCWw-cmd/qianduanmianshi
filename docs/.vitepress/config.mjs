@@ -15,7 +15,7 @@ export default defineConfig({
   titleTemplate: "面试命中率高达90%",
   srcDir: "src",
   // 设置GitHub Pages基础路径，需要与仓库名匹配
-  base: process.env.NODE_ENV === 'production' ? '/interview/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/qianduanmianshi/' : '/',
   // rewrites: {
   //   // 将 /guide 路由指向预览内容，但使用完整版生成目录
   //   'guide': 'preview/guide.md',
